@@ -14,7 +14,7 @@ async function MonedasDeCambio(url){
         return [monedas,monedasYdatos];
         
     } catch(error){
-        console.log(error)
+        alert(error.message);
     }
 }
 
@@ -89,7 +89,7 @@ const renderGraph = async (codigo) => {
         var graph2d = new vis.Graph2d(grafico, dataset, limites);
 
     } catch (error) {
-        console.log(error)
+        alert(error.message);
     }   
 }
 
