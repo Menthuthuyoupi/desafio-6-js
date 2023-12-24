@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/vis@4.21.0-EOL/dist/vis.min.css" rel="stylesheet">
+    <title>Conversor de Monedas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="caja">
+            <h1>Conversor de moneda nacional</h1>
+            <div class="container">
+                <div>
+                    <h2>Pesos CLP</h2>
+                    <input id="numero" placeholder="Ingrese el monto en CLP" onkeypress="return valideKey(event);">
+                    <p>Moneda a convertir:</p>
+                    <select id="selectedCoin">
+                        <option value="elegir una opction" disabled selected>--Seleccione moneda--</option>
+                    </select>
+                    <div class="container">
+                        <button id="boton">Buscar</button> 
+                    </div>
+                    <p>Resultado: <spam id="resultado"></spam></p>
+                </div>
+            </div>
+            <div id="grafico"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vis@4.21.0-EOL/dist/vis.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script type="text/javascript">
+
+        </script> 
+</body>
+</html>
